@@ -20,3 +20,11 @@ const PreventScreenMirroring = NativeModules.PreventScreenMirroring
 export function multiply(a: number, b: number): Promise<number> {
   return PreventScreenMirroring.multiply(a, b);
 }
+
+export function enabled(enable: boolean) {
+  return PreventScreenMirroring.enabled(enable);
+}
+
+export function enableSecureView() {
+  return PreventScreenMirroring.enableSecureView();
+}
